@@ -1,0 +1,20 @@
+[
+  {
+    "id": "permit-1",
+    "name": "City of Austin Electrical License",
+    "permit_number": "ELEC-44821",
+    "permit_type": "Electrical",
+    "jurisdiction": "Austin, TX",
+    "issued_at": "2023-01-15T00:00:00Z",
+    "expires_at": "2024-01-14T00:00:00Z"
+  },
+  {
+    "id": "permit-2",
+    "name": "State Journeyman License",
+    "permit_number": "SJ-98999",
+    "permit_type": "Journeyman",
+    "jurisdiction": "Texas",
+    "issued_at": "2022-06-01T00:00:00Z",
+    "expires_at": "2024-06-01T00:00:00Z"
+  }
+]

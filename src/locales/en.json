@@ -1,0 +1,245 @@
+{
+  "app": {
+    "name": "Compliance Copilot",
+    "loading": "Loading",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "language": "Language",
+    "english": "English",
+    "spanish": "Spanish",
+    "languageShort": {
+      "en": "EN",
+      "es": "ES"
+    }
+  },
+  "nav": {
+    "documents": "Documents",
+    "requirements": "Requirements",
+    "permits": "Permits",
+    "training": "Training"
+  },
+  "actions": {
+    "upload": "Upload",
+    "complete": "Complete",
+    "renew": "Renew",
+    "view": "View",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "refresh": "Refresh",
+    "remind": "Remind",
+    "filter": "Filters",
+    "clear": "Clear",
+    "apply": "Apply",
+    "label": "Actions",
+    "back": "Back"
+  },
+  "statuses": {
+    "open": "Open",
+    "review": "Needs review",
+    "needsReview": "Needs review",
+    "needsTriage": "Needs triage",
+    "scheduled": "Scheduled",
+    "completed": "Completed",
+    "done": "Completed",
+    "overdue": "Overdue",
+    "expiringSoon": "Expiring soon",
+    "active": "Active",
+    "dueToday": "Due today"
+  },
+  "frequencies": {
+    "beforeEachUse": "Before each use",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "quarterly": "Quarterly",
+    "annual": "Annual",
+    "everyNDays": "Every N days",
+    "everyNWeeks": "Every N weeks",
+    "everyNMonths": "Every N months",
+    "oneTime": "One time"
+  },
+  "filters": {
+    "all": "All",
+    "overdue": "Overdue",
+    "due7": "Due in 7 days",
+    "due30": "Due in 30 days"
+  },
+  "alerts": {
+    "clear": "Clear"
+  },
+  "empty": {
+    "documents": "No documents uploaded yet.",
+    "requirements": "No compliance requirements to show.",
+    "permits": "No permits on file.",
+    "training": "No training certificates uploaded yet."
+  },
+  "documents": {
+    "title": "Document uploads",
+    "lastFive": "Last uploads",
+    "uploaded": "Uploaded",
+    "extracted": "Extraction finished",
+    "requirementsColumn": "Requirements",
+    "uploadNew": "Upload document",
+    "recentUploads": "Recent uploads",
+    "uploadSuccess": "Document uploaded",
+    "uploadQueued": "Processing started. Refresh shortly to see extracted items.",
+    "uploadFailed": "Upload failed",
+    "fields": {
+      "file": "Select PDF",
+      "trade": "Trade"
+    },
+    "lastFiveHint": "Latest uploads for quick QA before routing tasks.",
+    "tradeOptions": {
+      "electrical": "Electrical",
+      "general": "General",
+      "mechanical": "Mechanical"
+    },
+    "processing": "Processing extraction…",
+    "uploading": "Uploading…"
+  },
+  "requirements": {
+    "title": "Compliance requirements",
+    "table": {
+      "requirement": "Requirement",
+      "category": "Category",
+      "frequency": "Frequency",
+      "due": "Due",
+      "status": "Status",
+      "document": "Document"
+    },
+    "filters": {
+      "label": "Filter due date",
+      "statusLabel": "Status"
+    },
+    "completeSuccess": "Requirement marked complete",
+    "completeError": "Unable to complete requirement",
+    "renewReminder": "Renewal reminder added",
+    "detail": {
+      "saveSuccess": "Requirement updated",
+      "saveError": "Unable to save requirement",
+      "confirmLeave": "You have unsaved changes. Leave without saving?",
+      "keepEditing": "Keep editing to save your updates.",
+      "changesDiscarded": "Unsaved changes were discarded.",
+      "noChanges": "No changes to save.",
+      "retentionTitle": "Record retention",
+      "pendingApproval": "Pending approval",
+      "archivedBadge": "Archived",
+      "deletedBadge": "Deleted",
+      "approveRequest": "Approve",
+      "rejectRequest": "Reject",
+      "archiveNow": "Archive",
+      "requestDelete": "Request deletion",
+      "archiveRequested": "Archive request submitted",
+      "archived": "Requirement archived",
+      "deleted": "Requirement deleted",
+      "archiveError": "Unable to update retention state",
+      "archiveApproved": "Archive request approved",
+      "archiveRejected": "Archive request rejected",
+      "archivedSummary": "This requirement is archived and hidden from active queues.",
+      "deletedSummary": "This requirement is hidden after deletion.",
+      "requestedBy": "Requested by {{user}} on {{date}}",
+      "unknownUser": "unknown",
+      "restore": "Restore",
+      "restored": "Requirement restored",
+      "confirmArchive": "Archive this requirement and hide it from queues?",
+      "confirmArchiveApproval": "Request approval to archive or delete this requirement?",
+      "confirmRestore": "Restore this requirement to active?",
+      "triageSection": "Triage details",
+      "triageSuccess": "Requirement updated",
+      "archiveGuidance": "Archive requirements once they are no longer in your active workflow.",
+      "previousArchiveReason": "Previously archived because: {{reason}}"
+    },
+    "actions": {
+      "archive": "Archive"
+    }
+  },
+  "statusFilters": {
+    "active": "Active",
+    "completed": "Completed",
+    "archived": "Archived",
+    "triage": "Needs triage"
+  },
+  "categories": {
+    "generalRecommendation": "General recommendation",
+    "electricalSafety": "Electrical safety"
+  },
+  "triage": {
+    "status": "Status",
+    "statusPlaceholder": "Choose status",
+    "frequency": "Frequency",
+    "frequencyPlaceholder": "Choose frequency",
+    "interval": "Interval",
+    "intervalHint": "Required for every-N schedules",
+    "anchorType": "Schedule reference",
+    "anchorTypePlaceholder": "Select reference",
+    "anchorTypeHint": "Use upload date or first completion to schedule future cycles.",
+    "anchorDate": "Reference date",
+    "anchorDateHint": "Optional date to start the schedule.",
+    "assignee": "Assignee email (optional)",
+    "selection": "Selected",
+    "confirmDismiss": "Archive this requirement as not applicable?",
+    "confirmDismissMany": "Archive {{count}} requirements as not applicable?",
+    "dismissReasonPrompt": "Add a note for why these requirements are being archived.",
+    "dismissReason": "Not applicable",
+    "dismissed": "Requirement archived",
+    "dismissedMany": "Archived {{count}} requirements",
+    "error": "Unable to update requirements",
+    "selectAll": "Select all for triage",
+    "select": "Select for triage",
+    "frequencyRequired": "Select a frequency before saving.",
+    "dueRequired": "Set a due date before saving.",
+    "intervalRequired": "Provide an interval value",
+    "statusRequired": "Choose a status before saving.",
+    "success": "Triage updated",
+    "reasonsLabel": "Reasons",
+    "reasons": {
+      "missing_frequency": "Missing frequency",
+      "missing_due_date": "Missing due date",
+      "low_confidence": "Low confidence",
+      "needs_review": "Needs review"
+    }
+  },
+  "permits": {
+    "title": "Permits & licenses",
+    "table": {
+      "name": "Name",
+      "issued": "Issued",
+      "expires": "Expires",
+      "status": "Status"
+    },
+    "renewReminder": "Review renewal before expiration",
+    "complete": "Permit marked renewed"
+  },
+  "training": {
+    "title": "Worker training",
+    "table": {
+      "worker": "Worker",
+      "certification": "Certification",
+      "expires": "Expires",
+      "status": "Status"
+    },
+    "renewReminder": "Renewal reminder added",
+    "complete": "Training marked complete"
+  },
+  "pagination": {
+    "label": "Pagination",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "toasts": {
+    "loadError": "Unable to load data"
+  },
+  "anchors": {
+    "uploadDate": "Upload date",
+    "issueDate": "Issue date",
+    "calendar": "Calendar date",
+    "firstCompletion": "First completion",
+    "customDate": "Custom date"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "toggle": "Toggle theme"
+  }
+}

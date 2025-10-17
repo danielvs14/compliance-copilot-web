@@ -1,0 +1,245 @@
+{
+  "app": {
+    "name": "Compliance Copilot",
+    "loading": "Cargando",
+    "error": "Ocurrió un error",
+    "retry": "Reintentar",
+    "language": "Idioma",
+    "english": "Inglés",
+    "spanish": "Español",
+    "languageShort": {
+      "en": "EN",
+      "es": "ES"
+    }
+  },
+  "nav": {
+    "documents": "Documentos",
+    "requirements": "Requisitos",
+    "permits": "Permisos",
+    "training": "Capacitaciones"
+  },
+  "actions": {
+    "upload": "Subir",
+    "complete": "Completar",
+    "renew": "Renovar",
+    "view": "Ver",
+    "close": "Cerrar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "refresh": "Actualizar",
+    "remind": "Recordar",
+    "filter": "Filtros",
+    "clear": "Limpiar",
+    "apply": "Aplicar",
+    "label": "Acciones",
+    "back": "Regresar"
+  },
+  "statuses": {
+    "open": "Abierto",
+    "review": "Requiere revisión",
+    "needsReview": "Requiere revisión",
+    "needsTriage": "Requiere triage",
+    "scheduled": "Programado",
+    "completed": "Completado",
+    "done": "Completado",
+    "overdue": "Atrasado",
+    "expiringSoon": "Próximo a vencer",
+    "active": "Activo",
+    "dueToday": "Vence hoy"
+  },
+  "frequencies": {
+    "beforeEachUse": "Antes de cada uso",
+    "daily": "Diaria",
+    "weekly": "Semanal",
+    "monthly": "Mensual",
+    "quarterly": "Trimestral",
+    "annual": "Anual",
+    "everyNDays": "Cada N días",
+    "everyNWeeks": "Cada N semanas",
+    "everyNMonths": "Cada N meses",
+    "oneTime": "Única vez"
+  },
+  "filters": {
+    "all": "Todos",
+    "overdue": "Atrasados",
+    "due7": "Vence en 7 días",
+    "due30": "Vence en 30 días"
+  },
+  "alerts": {
+    "clear": "Sin alertas"
+  },
+  "empty": {
+    "documents": "Aún no se han subido documentos.",
+    "requirements": "No hay requisitos de cumplimiento para mostrar.",
+    "permits": "No hay permisos registrados.",
+    "training": "No se han cargado certificados de capacitación."
+  },
+  "documents": {
+    "title": "Documentos cargados",
+    "lastFive": "Últimas cargas",
+    "uploaded": "Subido",
+    "extracted": "Extracción finalizada",
+    "requirementsColumn": "Requisitos",
+    "uploadNew": "Subir documento",
+    "recentUploads": "Cargas recientes",
+    "uploadSuccess": "Documento subido",
+    "uploadQueued": "Procesamiento iniciado. Actualiza pronto para ver los elementos extraídos.",
+    "uploadFailed": "La carga falló",
+    "fields": {
+      "file": "Seleccionar PDF",
+      "trade": "Rubro"
+    },
+    "lastFiveHint": "Últimos documentos para revisión rápida antes de asignar tareas.",
+    "tradeOptions": {
+      "electrical": "Eléctrico",
+      "general": "General",
+      "mechanical": "Mecánico"
+    },
+    "processing": "Procesando extracción…",
+    "uploading": "Cargando…"
+  },
+  "requirements": {
+    "title": "Requisitos de cumplimiento",
+    "table": {
+      "requirement": "Requisito",
+      "category": "Categoría",
+      "frequency": "Frecuencia",
+      "due": "Fecha límite",
+      "status": "Estado",
+      "document": "Documento"
+    },
+    "filters": {
+      "label": "Filtrar por fecha",
+      "statusLabel": "Estado"
+    },
+    "completeSuccess": "Requisito marcado como completado",
+    "completeError": "No se pudo completar el requisito",
+    "renewReminder": "Recordatorio de renovación registrado",
+    "detail": {
+      "saveSuccess": "Requisito actualizado",
+      "saveError": "No se pudo guardar el requisito",
+      "confirmLeave": "Tienes cambios sin guardar. ¿Salir sin guardar?",
+      "keepEditing": "Sigue editando para guardar tus cambios.",
+      "changesDiscarded": "Se descartaron los cambios sin guardar.",
+      "noChanges": "No hay cambios que guardar.",
+      "retentionTitle": "Retención del registro",
+      "pendingApproval": "Pendiente de aprobación",
+      "archivedBadge": "Archivado",
+      "deletedBadge": "Eliminado",
+      "approveRequest": "Aprobar",
+      "rejectRequest": "Rechazar",
+      "archiveNow": "Archivar",
+      "requestDelete": "Solicitar eliminación",
+      "archiveRequested": "Solicitud enviada",
+      "archived": "Requisito archivado",
+      "deleted": "Requisito eliminado",
+      "archiveError": "No se pudo actualizar el estado de retención",
+      "archiveApproved": "Solicitud aprobada",
+      "archiveRejected": "Solicitud rechazada",
+      "archivedSummary": "Este requisito está archivado y oculto de las colas activas.",
+      "deletedSummary": "Este requisito está oculto tras su eliminación.",
+      "requestedBy": "Solicitado por {{user}} el {{date}}",
+      "unknownUser": "desconocido",
+      "restore": "Restaurar",
+      "restored": "Requisito restaurado",
+      "confirmArchive": "¿Archivar este requisito y ocultarlo de las colas?",
+      "confirmArchiveApproval": "¿Solicitar aprobación para archivar o eliminar este requisito?",
+      "confirmRestore": "¿Restaurar este requisito?",
+      "triageSection": "Detalles de triage",
+      "triageSuccess": "Requisito actualizado",
+      "archiveGuidance": "Archiva los requisitos cuando ya no formen parte del flujo activo.",
+      "previousArchiveReason": "Archivado previamente porque: {{reason}}"
+    },
+    "actions": {
+      "archive": "Archivar"
+    }
+  },
+  "statusFilters": {
+    "active": "Activas",
+    "completed": "Completadas",
+    "archived": "Archivadas",
+    "triage": "Necesitan triage"
+  },
+  "categories": {
+    "generalRecommendation": "Recomendación general",
+    "electricalSafety": "Seguridad eléctrica"
+  },
+  "triage": {
+    "status": "Estado",
+    "statusPlaceholder": "Elige un estado",
+    "frequency": "Frecuencia",
+    "frequencyPlaceholder": "Elige la frecuencia",
+    "interval": "Intervalo",
+    "intervalHint": "Requerido para frecuencias cada N.",
+    "anchorType": "Referencia de calendario",
+    "anchorTypePlaceholder": "Selecciona la referencia",
+    "anchorTypeHint": "Usa la fecha de carga o la primera finalización para programar futuras repeticiones.",
+    "anchorDate": "Fecha de referencia",
+    "anchorDateHint": "Fecha opcional para iniciar la programación.",
+    "assignee": "Correo del responsable (opcional)",
+    "selection": "Seleccionados",
+    "confirmDismiss": "¿Archivar este requisito por no aplicar?",
+    "confirmDismissMany": "¿Archivar {{count}} requisitos por no aplicar?",
+    "dismissReasonPrompt": "Agrega una nota sobre por qué se archivan estos requisitos.",
+    "dismissReason": "No aplica",
+    "dismissed": "Requisito archivado",
+    "dismissedMany": "Se archivaron {{count}} requisitos",
+    "error": "No se pudieron actualizar los requisitos",
+    "selectAll": "Seleccionar todos para triage",
+    "select": "Seleccionar para triage",
+    "frequencyRequired": "Selecciona una frecuencia antes de guardar.",
+    "dueRequired": "Define una fecha límite antes de guardar.",
+    "intervalRequired": "Indica un valor de intervalo",
+    "statusRequired": "Elige un estado antes de guardar.",
+    "success": "Triage actualizado",
+    "reasonsLabel": "Motivos",
+    "reasons": {
+      "missing_frequency": "Falta la frecuencia",
+      "missing_due_date": "Falta la fecha límite",
+      "low_confidence": "Baja confianza",
+      "needs_review": "Requiere revisión"
+    }
+  },
+  "permits": {
+    "title": "Permisos y licencias",
+    "table": {
+      "name": "Nombre",
+      "issued": "Emitido",
+      "expires": "Vence",
+      "status": "Estado"
+    },
+    "renewReminder": "Revisa la renovación antes del vencimiento",
+    "complete": "Permiso marcado como renovado"
+  },
+  "training": {
+    "title": "Capacitación de personal",
+    "table": {
+      "worker": "Trabajador",
+      "certification": "Certificación",
+      "expires": "Vence",
+      "status": "Estado"
+    },
+    "renewReminder": "Recordatorio de renovación agregado",
+    "complete": "Capacitación marcada como completada"
+  },
+  "pagination": {
+    "label": "Paginación",
+    "previous": "Anterior",
+    "next": "Siguiente"
+  },
+  "toasts": {
+    "loadError": "No se pudo cargar la información"
+  },
+  "anchors": {
+    "uploadDate": "Fecha de carga",
+    "issueDate": "Fecha de emisión",
+    "calendar": "Fecha de calendario",
+    "firstCompletion": "Primera finalización",
+    "customDate": "Fecha personalizada"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "toggle": "Cambiar tema"
+  }
+}

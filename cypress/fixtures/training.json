@@ -1,0 +1,18 @@
+[
+  {
+    "id": "train-1",
+    "worker_name": "Ana Morales",
+    "certification_type": "OSHA 30",
+    "authority": "OSHA",
+    "issued_at": "2022-08-01T00:00:00Z",
+    "expires_at": "2024-08-01T00:00:00Z"
+  },
+  {
+    "id": "train-2",
+    "worker_name": "Marcus Lee",
+    "certification_type": "CPR / First Aid",
+    "authority": "Red Cross",
+    "issued_at": "2023-02-10T00:00:00Z",
+    "expires_at": "2024-02-09T00:00:00Z"
+  }
+]

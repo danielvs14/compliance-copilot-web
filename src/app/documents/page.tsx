@@ -1,69 +1,41 @@
-"use client"
-import { useState } from "react"
+import { DocumentsClient, DocumentsResponse } from "@/app/documents/documents-client"
+import { AuthMeResponse } from "@/hooks/useAuthedProfile"
+import { serverApiFetch } from "@/lib/api/server"
+import { ApiError } from "@/lib/api/client"
 
-type Task = {
-  title: string
-  category?: string | null
-  frequency?: string | null
-  due_date?: string | null
-  source_ref: string
-  confidence: number
-}
+async function fetchInitialDocuments(): Promise<{
+  profile: AuthMeResponse | null
+  documents: DocumentsResponse | null
+}> {
+  let profile: AuthMeResponse | null = null
+  let documents: DocumentsResponse | null = null
 
-export default function DocumentsPage() {
-  const [file, setFile] = useState<File | null>(null)
-  const [loading, setLoading] = useState(false)
-  const [tasks, setTasks] = useState<Task[]>([])
-
-  const handleUpload = async () => {
-    if (!file) return
-    setLoading(true)
-
-    const formData = new FormData()
-    formData.append("file", file)
-
-    const res = await fetch("http://localhost:8000/documents/upload", {
-      method: "POST",
-      body: formData,
-    })
-    const data = await res.json()
-    setTasks(data.requirements)
-    setLoading(false)
+  try {
+    profile = await serverApiFetch<AuthMeResponse>("/auth/me")
+  } catch (error) {
+    if (!(error instanceof ApiError && error.status === 401)) {
+      console.warn("[documents] profile prefetch failed", error)
+    }
   }
 
-  return (
-    <div className="p-8">
-      <h1 className="text-2xl font-bold mb-4">Upload Document</h1>
-      <input
-        type="file"
-        accept="application/pdf"
-        onChange={(e) => setFile(e.target.files?.[0] || null)}
-        className="mb-4"
-      />
-      <button
-        onClick={handleUpload}
-        className="bg-blue-600 text-white px-4 py-2 rounded"
-      >
-        {loading ? "Uploading..." : "Upload"}
-      </button>
+  try {
+    documents = await serverApiFetch<DocumentsResponse>("/documents", { searchParams: { limit: 5 } })
+  } catch (error) {
+    if (!(error instanceof ApiError && error.status === 401)) {
+      console.warn("[documents] documents prefetch failed", error)
+    }
+  }
 
-      {tasks.length > 0 && (
-        <div className="mt-6">
-          <h2 className="text-xl font-semibold mb-2">Extracted Tasks</h2>
-          <ul className="space-y-2">
-            {tasks.map((t, i) => (
-              <li key={i} className="border p-2 rounded">
-                <p><b>{t.title}</b></p>
-                <p className="text-sm text-gray-500">
-                  Due: {t.due_date || t.frequency}
-                </p>
-                <p className="text-xs text-gray-400">Source: {t.source_ref}</p>
-                <p className="text-xs">Confidence: {t.confidence}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
+  return { profile, documents }
+}
+
+export default async function DocumentsPage() {
+  const initialData = await fetchInitialDocuments()
+
+  return (
+    <DocumentsClient
+      initialProfile={initialData.profile}
+      initialDocuments={initialData.documents}
+    />
   )
 }

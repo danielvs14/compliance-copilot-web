@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "req-1",
+      "title_en": "Monthly lift inspection",
+      "title_es": "Inspección mensual de elevadores",
+      "description_en": "Inspect company-owned lifts for mechanical defects.",
+      "description_es": "Inspeccionar elevadores propios en busca de defectos mecánicos.",
+      "category": "Safety",
+      "frequency": "Monthly",
+      "due_date": "2024-01-20T00:00:00Z",
+      "status": "OPEN",
+      "source_ref": "Section 4.3",
+      "document_name": "Lockout Tagout SOP.pdf"
+    },
+    {
+      "id": "req-2",
+      "title_en": "Arc flash PPE review",
+      "title_es": "Revisión EPP arco eléctrico",
+      "description_en": "Confirm PPE inventory for all crews.",
+      "description_es": "Confirmar inventario de EPP para todas las cuadrillas.",
+      "category": "PPE",
+      "frequency": "Quarterly",
+      "due_date": "2023-12-15T00:00:00Z",
+      "status": "REVIEW",
+      "source_ref": "Section 7.1",
+      "document_name": "Arc Flash Policy.pdf"
+    },
+    {
+      "id": "req-3",
+      "title_en": "Annual OSHA 300 posting",
+      "title_es": "Publicación anual OSHA 300",
+      "description_en": "Post OSHA 300 summary at shop entrance.",
+      "description_es": "Publicar resumen OSHA 300 en la entrada del taller.",
+      "category": "Regulatory",
+      "frequency": "Annual",
+      "due_date": "2024-02-01T00:00:00Z",
+      "status": "OPEN",
+      "source_ref": "OSHA",
+      "document_name": "City of Austin Electrical License"
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "limit": 10,
+    "total": 3
+  }
+}
